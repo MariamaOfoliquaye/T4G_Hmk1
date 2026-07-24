@@ -1,6 +1,5 @@
 // A. Store your name inside a variable and log it to the console.
-let name = "Mariama";
-console.log("Name:", name);
+let name = "Mariamaconsole.log"("Name:", name);
 // B. Store your age inside a variable and log it to the console.
 let age = 25; // Replace with your actual age
 console.log("Age:", age);
