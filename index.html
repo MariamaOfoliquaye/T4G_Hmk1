@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MISMI'S ENTERPRISE</title>
-    <link rel="stylesheet" href="src/style.css">
-    <script src="https://kit.fontawesome.com/81f84200c1.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age-Based Registration · T4G_Hmk1</title>
+
+    <!-- Google Font & Font Awesome (CDN) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Custom styles - now pointing to src/ -->
+    <link rel="stylesheet" href="src/style.css" />
 </head>
 <body>
-    <div class="page">
-        <h1>Welcome to MISMI'S ENTERPRISE🫂</h1>
-        <ul class="nav-links">
-            <li><a href="index.html" target="_blank">home</a></li>
-            <li><a href="pages/about.html" target="_blank">about</a></li>
-            <li><a href="pages/contact.html" target="_blank">contact us</a></li>
-        </ul>
-        <h2>Introduction</h2>
-        <p>This is a simple introduction to our enterprise.<br>
-            Learn more about us by visiting the About page or get in touch through the Contact Us page. We are committed to providing the best services to our customers and ensuring their satisfaction. Thank you for visiting our website!
-        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+    <div class="card">
+
+        <!-- HEADER -->
+        <div class="header">
+            <i class="fas fa-user-check"></i>
+            <h1>Register</h1>
+        </div>
+        <p class="subtitle">
+            <i class="fas fa-chevron-right" style="font-size:0.7rem; margin-right:6px; color:#2563eb;"></i>
+            Enter your details &amp; we'll tailor the response based on your age.
         </p>
 
-        <section class="intro-card">
-            <h3>Share your details</h3>
-            <p>Click the button below to enter your name, age, and email.</p>
-            <button id="show-info-btn" type="button">Submit your details</button>
-            <div id="user-info-card" class="user-info-card">
-                <p id="user-message">Your information will appear here once you submit it.</p>
+        <!-- FORM -->
+        <form id="registerForm" autocomplete="off">
+            <div class="form-group">
+                <label for="username">
+                    <i class="fas fa-user"></i> Username
+                </label>
+                <input type="text" id="username" placeholder="e.g. jordan_23" required />
             </div>
-        </section>
 
-        <img src="images/indeximg1.jpeg" alt="Enterprise showcase image">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="age">
+                        <i class="fas fa-calendar-alt"></i> Age
+                    </label>
+                    <input type="number" id="age" placeholder="e.g. 16" min="1" max="120" required />
+                </div>
 
-            <p>&copy; 2026 MISMI'S ENTERPRISE. All rights reserved.</p>
-        <div> <!--Social media links-->
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Email
+                    </label>
+                    <input type="email" id="email" placeholder="you@example.com" required />
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i> Check Eligibility
+            </button>
+        </form>
+
+        <!-- ALERT OUTPUT -->
+        <div id="alertBox" class="alert-box info">
+            <i class="fas fa-info-circle"></i>
+            <div class="msg">
+                <span id="alertMessage">
+                    <i class="fas fa-hand-point-right" style="color:#2563eb; margin-right:6px;"></i>
+                    Fill in the form and click <strong>Check Eligibility</strong>
+                </span>
+            </div>
         </div>
-    </footer>
+
+        <!-- FOOTER HINT -->
+        <div class="hint">
+            <i class="fas fa-table"></i> Conditions applied &bull; see table in image
+        </div>
     </div>
 
-    <script src="src/script.js"></script>
+    <!-- JavaScript - now pointing to src/ -->
+    <script src="src/script.js" defer></script>
 </body>
 </html>
