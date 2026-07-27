@@ -3,56 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact us</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Contact Us</title>
     <script src="https://kit.fontawesome.com/81f84200c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>contact us</h1>
-    <ul>
-            <li><a href="../index.html"target="_blank">home</a></li>
-            <li><a href="about.html"target="_blank">about</a></li>
-            <li><a href="contact.html"target="_blank">contact us</a></li>
-            
+    <div class="page">
+        <header class="page-header">
+            <h1>Contact Us</h1>
+            <p>We are here to assist you with compassion and professionalism.</p>
+        </header>
+
+        <ul class="nav-links">
+            <li><a href="../index.html" target="_blank">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
         </ul>
-    <h2>Get in Touch</h2>
-    <div> <!-- Container for my forms --></div>
-    <form action=""method="get">
-        <label for="l_name">First name:</label>
-        <input type="text" name="l_name" required> <br>
 
-        <label for="l_name">Last name:</label>
-        <input type="text" name="l_name" required> <br>
+        <section class="intro-card">
+            <h2>Get in Touch</h2>
+            <form action="" method="get" class="contact-form">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="" required> <br>
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" required>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="" required> <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-        <textarea name="" id=""  cols="30"  rows="10" required placeholder"""></textarea><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-        <input type="submit" value="Submit">
-    <p> If you have any further enquiries,feel free to reach out to us through the following contact details</p>
-    <ul>
-        <li>Email: <a href="mailto:info@mismisenterprise.com">info@mismisenterprise.com</a></li>
-        <li>Phone: <a href="tel:+233 257128569">+233 200024597</a></li>
-    </ul>
-    <footer>
-        <p>&copy; 2026 MISMI'S ENTERPRISE. All rights reserved.</p>
-        <div> <!--Social media links-->
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-    </footer>
-       
+                <input type="submit" value="Submit">
+            </form>
+        </section>
 
-    
+        <p>If you have any further enquiries, feel free to reach out to us through the following contact details:</p>
+        <ul>
+            <li>Email: <a href="mailto:info@mismisenterprise.com">info@mismisenterprise.com</a></li>
+            <li>Phone: <a href="tel:+233200024597">+233 200024597</a></li>
+        </ul>
 
-    
+        <footer>
+            <p>&copy; 2026 MISMI'S ENTERPRISE. All rights reserved.</p>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

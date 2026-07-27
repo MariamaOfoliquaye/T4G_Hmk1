@@ -1,35 +1,23 @@
-// A. Store your name inside a variable and log it to the console.
-let name = "Mariamaconsole.log"("Name:", name);
-// B. Store your age inside a variable and log it to the console.
-let age = 25; // Replace with your actual age
-console.log("Age:", age);
-// C. Add two numbers and store the result in a variable.
-let addition = 15 + 10;
-console.log("Addition:", addition);
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("show-info-btn");
+    const message = document.getElementById("user-message");
 
-// D. Subtract two numbers and store the result in a variable.
-let subtraction = 20 - 8;
-console.log("Subtraction:", subtraction);
+    if (button && message) {
+        button.addEventListener("click", function () {
+            const name = prompt("Please enter your name:");
+            const age = prompt("Please enter your age:");
+            const email = prompt("Please enter your email:");
 
-// E. Divide two numbers and store the result in a variable.
-let division = 24 / 6;
-console.log("Division:", division);
+            if (!name || !age || !email) {
+                const reminder = "Please provide your name, age, and email.";
+                message.textContent = reminder;
+                alert(reminder);
+                return;
+            }
 
-// F. Multiply two numbers and store the result in a variable.
-let multiplication = 7 * 9;
-console.log("Multiplication:", multiplication);
-
-// G. Find the remainder of 15 % 4 and store it in a variable.
-let remainder = 15 % 4;
-console.log("Remainder:", remainder);
-
-// H. Store a boolean value inside a variable and log it.
-let isStudent = true;
-console.log("Boolean:", isStudent);
-
-// I. Set the value of a variable to a number and log its data type.
-let numberValue = 100;
-console.log("Type of numberValue:", typeof numberValue);
-// J. Set the value of a variable to a string and log its data type.
-let stringValue = "Hello, JavaScript!";
-console.log("Type of stringValue:", typeof stringValue);
+            const displayMessage = `Hi ${name}, you are ${age} years old and we'll keep in touch via your email: ${email}`;
+            message.textContent = displayMessage;
+            alert(displayMessage);
+        });
+    }
+});

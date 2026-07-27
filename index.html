@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISMI'S ENTERPRISE</title>
+    <link rel="stylesheet" href="src/style.css">
     <script src="https://kit.fontawesome.com/81f84200c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Welcome to MISMI'S ENTERPRISE🫂</h1>
-    <p>
-        <ul>
-            <li><a href="index.html"target="_blank">home</a></li>
-            <li><a href="pages/about.html"target="_blank">about</a></li>
-            <li><a href="pages/contact.html"target="_blank">contact us</a></li>
-            
+    <div class="page">
+        <h1>Welcome to MISMI'S ENTERPRISE🫂</h1>
+        <ul class="nav-links">
+            <li><a href="index.html" target="_blank">home</a></li>
+            <li><a href="pages/about.html" target="_blank">about</a></li>
+            <li><a href="pages/contact.html" target="_blank">contact us</a></li>
         </ul>
-    </p>
-    <h2>Introduction</h2>
-    <p>This is a simple introduction to our enterprise.<br>
-        Learn more about us by visiting the About page or get in touch through the Contact Us page. We are committed to providing the best services to our customers and ensuring their satisfaction. Thank you for visiting our website!
-    <a href="https://www.instagram.com/?hl=en"target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </p>
-    <img src="images/indeximg1.jpeg" alt="">
+        <h2>Introduction</h2>
+        <p>This is a simple introduction to our enterprise.<br>
+            Learn more about us by visiting the About page or get in touch through the Contact Us page. We are committed to providing the best services to our customers and ensuring their satisfaction. Thank you for visiting our website!
+        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </p>
 
-    <footer>
-        <p>&copy; 2026 MISMI'S ENTERPRISE. All rights reserved.</p>
+        <section class="intro-card">
+            <h3>Share your details</h3>
+            <p>Click the button below to enter your name, age, and email.</p>
+            <button id="show-info-btn" type="button">Submit your details</button>
+            <div id="user-info-card" class="user-info-card">
+                <p id="user-message">Your information will appear here once you submit it.</p>
+            </div>
+        </section>
+
+        <img src="images/indeximg1.jpeg" alt="Enterprise showcase image">
+
+            <p>&copy; 2026 MISMI'S ENTERPRISE. All rights reserved.</p>
         <div> <!--Social media links-->
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -32,6 +40,7 @@
             <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
+    </div>
 
     <script src="src/script.js"></script>
 </body>
